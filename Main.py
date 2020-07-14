@@ -22,6 +22,11 @@ class auto_x:
         self.password = password
 
     
+
+    def test(self):
+        print("xxxxx")
+
+
     def click_ok(self):
         btn_ok = self.driver.find_element_by_id("btnOK")
         # self.driver.switch_to_default_content()
