@@ -24,7 +24,7 @@ class auto_x:
     
 
     def test(self):
-        print("xxxxx")
+        print("ahsjkahd")
 
 
     def x(self):
