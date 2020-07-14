@@ -23,46 +23,7 @@ class auto_x:
 
     
 
-    def test(self):
-        print("xxxxx")
-
-
-    def x(self):
-        print("xxxx")
-
-
-    def click_ok(self):
-        btn_ok = self.driver.find_element_by_id("btnOK")
-        # self.driver.switch_to_default_content()
-        btn_ok.click()
-        time.sleep(0.5)
-
-    def alerts(self):
-        try:
-            alert = self.driver.switch_to_alert()
-            alert.accept()
-        except:
-            print("点击")
-        finally:
-            self.driver.switch_to_default_content()
-
-    def get_in(self):
-        self.driver.get("http://202.206.48.111:8020/main.aspx")
-        self.put_i()
-        time.sleep(15)
-
-        self.driver.switch_to_frame("leftFrame")
-        time.sleep(1)
-        aa = self.driver.find_element_by_class_name("MM")
-        aa.find_element_by_link_text(u"网上评教").click()
-        time.sleep(1)
-
-        self.driver.switch_to_default_content()
-
-        self.driver.switch_to_frame("main")
-        self.driver.find_element_by_id("btnLoad").click()
-        time.sleep(3)
-        self.driver.switch_to_default_content()
+    
 
     def enter(self):
         to_flag = True
