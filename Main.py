@@ -31,6 +31,11 @@ class auto_x:
         print("xxxx")
 
 
+
+
+    def f(self):
+        print("xxxx")
+
     def click_ok(self):
         btn_ok = self.driver.find_element_by_id("btnOK")
         # self.driver.switch_to_default_content()
